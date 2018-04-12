@@ -7,6 +7,7 @@
 <title>Insert title here</title>
 </head>
 <body>
-	<jsp:forward page="${pageContext.request.contextPath}/page_index_index.action"></jsp:forward>
+	Index Java1711
+	<%-- <jsp:forward page="${pageContext.request.contextPath}/page_index_index.action"></jsp:forward> --%>
 </body>
 </html>

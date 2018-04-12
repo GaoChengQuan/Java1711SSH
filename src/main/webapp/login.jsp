@@ -8,8 +8,8 @@
 </head>
 <body>
 	<form action="${pageContext.request.contextPath}/adminAction_login.action">
-		用户名：<input type="text" name="name"/><br/>
-		密码：<input type="text" name="password"/><br/>
+		用户名：<input type="text" name="admin.name"/><br/>
+		密码：<input type="text" name="admin.password"/><br/>
 		<input type="submit" value="登陆"/>
 	</form>
 </body>

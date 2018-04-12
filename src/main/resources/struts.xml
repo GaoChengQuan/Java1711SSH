@@ -16,7 +16,7 @@
 		</action>
 		<!-- 管理员 -->
 		<action name="adminAction_*" class="adminAction" method="{1}">
-			<result name="login">/login.jsp</result>
+			<result name="loginSuccess">/index.jsp</result>
 			<result name="index">/index.jsp</result>
 		</action>
 		<!-- 学生 -->
