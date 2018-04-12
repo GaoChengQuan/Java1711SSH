@@ -1,0 +1,17 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC 
+	"-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+	"http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+
+<!-- 映射文件: 映射一个实体类对象；  描述一个对象最终实现可以直接保存对象数据到数据库中。  -->
+<hibernate-mapping package="com.situ.ssh.entity" auto-import="true">
+		<class name="Student" table="student" lazy="true">
+			<id name="id" column="id">
+				<generator class="native"></generator>
+			</id>
+			
+			<property name="name" column="name" type="java.lang.String"></property>
+			<property name="age" column="age"></property>
+			<property name="birthday" column="birthday"></property>
+		</class>
+</hibernate-mapping>
