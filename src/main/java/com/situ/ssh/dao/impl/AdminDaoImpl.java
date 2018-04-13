@@ -21,5 +21,4 @@ public class AdminDaoImpl extends BaseDaoImpl<Admin> implements IAdminDao{
 		}
 		return null;
 	}
-
 }

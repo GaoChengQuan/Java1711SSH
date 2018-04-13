@@ -33,5 +33,4 @@ public class StudentDaoImpl extends BaseDaoImpl<Student> implements IStudentDao 
 		// getHibernateTemplate().find(sql, firstResult, pageSize)
 		pageBean.setRows(rows);
 	}
-
 }

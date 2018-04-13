@@ -10,7 +10,8 @@ import com.situ.ssh.common.ServerResponse;
 import com.situ.ssh.entity.Student;
 import com.situ.ssh.service.IStudentService;
 
-
+//Action交给Spring容器管理，Spring默认创建实例是singleton的，但是Struts2每次访问Action都会创建一个新的Action，
+//其实就要求这个Action是多例的，所以要加@Scope("prototype")，告诉Spring Action的实例是多利的。
 @Controller
 @Scope("prototype")
 public class StudentAction extends BaseAction<Student>{
@@ -54,13 +55,5 @@ public class StudentAction extends BaseAction<Student>{
 		}
 		obj2Json(serverResponse);
 		return NONE;
-	}
-
-	public String getIds() {
-		return ids;
-	}
-
-	public void setIds(String ids) {
-		this.ids = ids;
 	}
 }

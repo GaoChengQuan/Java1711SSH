@@ -9,5 +9,4 @@ public interface IBaseDao<T> {
 	public void update(T entity);
 	public void findById(Serializable id);
 	public List<T> findAll();
-	
 }

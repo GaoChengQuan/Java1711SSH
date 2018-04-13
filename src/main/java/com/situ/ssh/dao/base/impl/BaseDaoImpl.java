@@ -22,7 +22,6 @@ public class BaseDaoImpl<T> extends HibernateDaoSupport implements IBaseDao<T> {
 	public void setMySessionFactory(SessionFactory sessionFactory) {
 		super.setSessionFactory(sessionFactory);
 	}
-	
 
 	public BaseDaoImpl() {
 		// this:当前运行的类(AdminDaoImpl/StudentDaoImpl)
