@@ -48,7 +48,7 @@
 			<div title="营销管理" data-options="selected:true,iconCls:'icon-yxgl'"
 				style="padding: 10px">
 				<a
-					href="javascript:openTab('学生管理','${ctx}/page_student_list.action','icon-yxjhgl')"
+					href="javascript:openTab('学生管理','${ctx}/pages_student_list.action','icon-yxjhgl')"
 					class="easyui-linkbutton"
 					data-options="plain:true,iconCls:'icon-yxjhgl'"
 					style="width: 150px">学生管理</a> <a

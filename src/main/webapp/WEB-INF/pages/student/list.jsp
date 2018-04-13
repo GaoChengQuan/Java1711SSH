@@ -10,7 +10,7 @@
 	$(function(){
 		/*展示数据的datagrid表格*/
 		$("#datagrid").datagrid({
-			url:'${ctx}/studentAction_pageQuery.action',
+			url:'${ctx}/studentAction_pageList.action',
 			method:'get',
 			fit:true,
 			singleSelect:false,

@@ -10,8 +10,14 @@
 	
 	<!-- action实例交给spring容器创建 -->
 	<package name="myStruts" extends="struts-default">
-		<!-- 需要进行权限控制的页面访问 -->
-		<action name="page_*_*">
+		<!-- WEB-INF需要进行权限控制的页面访问 -->
+		<!-- pages_admin_list 
+			默认：
+			class=com.opensymphony.xwork2.ActionSupport
+			method=execute
+			name=SUCCESS
+		-->
+		<action name="pages_*_*">
 			<result type="dispatcher">/WEB-INF/pages/{1}/{2}.jsp</result>
 		</action>
 		<!-- 管理员 -->

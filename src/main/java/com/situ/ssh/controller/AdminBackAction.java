@@ -5,17 +5,16 @@ import org.springframework.context.annotation.Scope;
 import org.springframework.stereotype.Controller;
 
 import com.opensymphony.xwork2.ActionSupport;
-import com.opensymphony.xwork2.ModelDriven;
 import com.situ.ssh.entity.Admin;
 import com.situ.ssh.service.IAdminService;
 
 @Controller
 @Scope("prototype")
-public class AdminAction extends ActionSupport implements ModelDriven<Admin>{
+public class AdminBackAction extends ActionSupport {
 	@Autowired
 	private IAdminService adminService;
 
-	private Admin admin = new Admin();
+	private Admin admin;
 
 	public String login() {
 		Admin adminLogin = adminService.login(admin);
@@ -23,8 +22,12 @@ public class AdminAction extends ActionSupport implements ModelDriven<Admin>{
 		return "loginSuccess";
 	}
 
-	@Override
-	public Admin getModel() {
+	public Admin getAdmin() {
 		return admin;
 	}
+
+	public void setAdmin(Admin admin) {
+		this.admin = admin;
+	}
+
 }
